@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3066000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user is in the login page",
+            "match": {
+              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_is_in_the_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_enter_and(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1695000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user click login",
+            "match": {
+              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_click_login()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T06:17:01.364Z",
+        "line": 22,
+        "name": "verify user can attach link by clicking on the link icon",
+        "description": "",
+        "id": "user-should-be-able-to-send-message;verify-user-can-attach-link-by-clicking-on-the-link-icon",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nextBase.step_definiton.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 23,
+            "name": "user is in home page and click on message button",
+            "match": {
+              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userIsInHomePageAndClickOnMessageButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1093000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "user can be clink on the link icon",
+            "match": {
+              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userCanBeClinkOnTheIcon()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "User Should be able to send message",
+    "description": "  AC:\n  1- verify user can send message by clicking \"MESSAGE\" tab\n  2- verify user can cancel message\n  3- verify user can attach link by clicking on the link icon",
+    "id": "user-should-be-able-to-send-message",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homeActivity.feature",
+    "tags": []
+  }
+]
