@@ -3,20 +3,21 @@
     "line": 1,
     "elements": [
       {
-        "line": 7,
-        "name": "",
+        "line": 9,
+        "name": "Assuming user ia on login page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3066000000,
+              "duration": 5023000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 7000000,
                   "status": "passed"
                 },
                 "match": {
@@ -24,14 +25,15 @@
                 }
               }
             ],
-            "line": 8,
-            "name": "user is in the login page",
+            "line": 10,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_is_in_the_login_page()"
+              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.user_is_on_the_login_page()"
             },
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -40,15 +42,38 @@
               }
             ],
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-04T20:08:05.272Z",
+        "line": 20,
+        "name": "ability to click checkbox \"Remember me on this computer\"",
+        "description": "",
+        "id": "login-functionality;ability-to-click-checkbox-\"remember-me-on-this-computer\"",
+        "after": [
           {
             "result": {
-              "duration": 169000000,
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nextBase.step_definiton.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -56,20 +81,16 @@
                 }
               }
             ],
-            "line": 9,
-            "name": "user enter \"username\" and \"password\"",
+            "line": 21,
+            "name": "user click on the \"checkbox\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"username\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 26
+                  "val": "\"checkbox\"",
+                  "offset": 18
                 }
               ],
-              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_enter_and(java.lang.String,java.lang.String)"
+              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.userClickOnThe(java.lang.String)"
             },
             "after": [
               {
@@ -85,12 +106,13 @@
           },
           {
             "result": {
-              "duration": 1695000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -98,99 +120,21 @@
                 }
               }
             ],
-            "line": 10,
-            "name": "user click login",
+            "line": 22,
+            "name": "\"checkbox\" will be selected",
             "match": {
-              "location": "com.nextBase.step_definiton.Login_StepDefinition.user_click_login()"
+              "arguments": [
+                {
+                  "val": "\"checkbox\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.willBeSelected(java.lang.String)"
             },
             "after": [
               {
                 "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
-                }
-              }
-            ],
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-03T06:17:01.364Z",
-        "line": 22,
-        "name": "verify user can attach link by clicking on the link icon",
-        "description": "",
-        "id": "user-should-be-able-to-send-message;verify-user-can-attach-link-by-clicking-on-the-link-icon",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.nextBase.step_definiton.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 101000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
-                }
-              }
-            ],
-            "line": 23,
-            "name": "user is in home page and click on message button",
-            "match": {
-              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userIsInHomePageAndClickOnMessageButton()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1093000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
-                }
-              }
-            ],
-            "line": 24,
-            "name": "user can be clink on the link icon",
-            "match": {
-              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userCanBeClinkOnTheIcon()"
-            },
-            "after": [
-              {
-                "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -203,16 +147,16 @@
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@Z"
           }
         ]
       }
     ],
-    "name": "User Should be able to send message",
-    "description": "  AC:\n  1- verify user can send message by clicking \"MESSAGE\" tab\n  2- verify user can cancel message\n  3- verify user can attach link by clicking on the link icon",
-    "id": "user-should-be-able-to-send-message",
+    "name": "login functionality",
+    "description": "  User Story: As a user, I should be able to login to the app\n\n  - Verify users can login\n  -verify users can check \"\"Remember me on this computer\"\" option\n  -Verify users can access to \"\"FORGOT YOUR PASSWORD?\"\" link page",
+    "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/homeActivity.feature",
+    "uri": "file:src/test/resources/features/Z_login.feature",
     "tags": []
   }
 ]
