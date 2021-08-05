@@ -11,12 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 3066000000,
+              "duration": 9142000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 3000000,
                   "status": "passed"
                 },
                 "match": {
@@ -43,7 +44,7 @@
           },
           {
             "result": {
-              "duration": 169000000,
+              "duration": 1040000000,
               "status": "passed"
             },
             "before": [
@@ -85,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 1695000000,
+              "duration": 2735000000,
               "status": "passed"
             },
             "before": [
@@ -118,7 +119,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-03T06:17:01.364Z",
+        "start_timestamp": "2021-08-04T20:52:39.455Z",
         "line": 22,
         "name": "verify user can attach link by clicking on the link icon",
         "description": "",
@@ -126,6 +127,7 @@
         "after": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -138,7 +140,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "before": [
@@ -159,6 +161,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -170,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 1093000000,
+              "duration": 617000000,
               "status": "passed"
             },
             "before": [
@@ -191,6 +194,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
