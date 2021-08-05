@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 7,
+        "line": 6,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 9142000000,
+              "duration": 4105000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 3000000,
+                  "duration": 4000000,
                   "status": "passed"
                 },
                 "match": {
@@ -25,7 +25,7 @@
                 }
               }
             ],
-            "line": 8,
+            "line": 7,
             "name": "user is in the login page",
             "match": {
               "location": "com.nextBase.step_definiton.Login_StepDefinition.user_is_in_the_login_page()"
@@ -33,6 +33,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -44,12 +45,13 @@
           },
           {
             "result": {
-              "duration": 1040000000,
+              "duration": 285000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -57,7 +59,7 @@
                 }
               }
             ],
-            "line": 9,
+            "line": 8,
             "name": "user enter \"username\" and \"password\"",
             "match": {
               "arguments": [
@@ -86,12 +88,13 @@
           },
           {
             "result": {
-              "duration": 2735000000,
+              "duration": 2855000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -99,7 +102,7 @@
                 }
               }
             ],
-            "line": 10,
+            "line": 9,
             "name": "user click login",
             "match": {
               "location": "com.nextBase.step_definiton.Login_StepDefinition.user_click_login()"
@@ -119,11 +122,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-04T20:52:39.455Z",
-        "line": 22,
-        "name": "verify user can attach link by clicking on the link icon",
+        "start_timestamp": "2021-08-05T03:58:04.869Z",
+        "line": 12,
+        "name": "Verify users get menu item and suggested modules when they type in the box.",
         "description": "",
-        "id": "user-should-be-able-to-send-message;verify-user-can-attach-link-by-clicking-on-the-link-icon",
+        "id": "agile-story:-3.-as-a-user--i-should-be-able-to-search-people-;verify-users-get-menu-item-and-suggested-modules-when-they-type-in-the-box.",
         "after": [
           {
             "result": {
@@ -140,7 +143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 126000000,
+              "duration": 2296000000,
               "status": "passed"
             },
             "before": [
@@ -153,10 +156,16 @@
                 }
               }
             ],
-            "line": 23,
-            "name": "user is in home page and click on message button",
+            "line": 13,
+            "name": "User type in the search box \"task\"",
             "match": {
-              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userIsInHomePageAndClickOnMessageButton()"
+              "arguments": [
+                {
+                  "val": "\"task\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.nextBase.step_definiton.HomeActivitySearch_StepDefinition.user_type_in_the_search_box(java.lang.String)"
             },
             "after": [
               {
@@ -169,11 +178,11 @@
                 }
               }
             ],
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 617000000,
+              "duration": 2110000000,
               "status": "passed"
             },
             "before": [
@@ -186,20 +195,46 @@
                 }
               }
             ],
-            "line": 24,
-            "name": "user can be clink on the link icon",
+            "line": 14,
+            "name": "User should see suggested modules",
             "match": {
-              "location": "com.nextBase.step_definiton.HomeActivity_StepDefinition.userCanBeClinkOnTheIcon()"
+              "location": "com.nextBase.step_definiton.HomeActivitySearch_StepDefinition.user_should_see_suggested_modules(java.util.List\u003cjava.lang.String\u003e)"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
                   "location": "com.nextBase.step_definiton.Hooks.afterStep()"
                 }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Menu items"
+                ]
+              },
+              {
+                "cells": [
+                  "Conversations"
+                ]
+              },
+              {
+                "cells": [
+                  "Search"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Groups"
+                ]
               }
             ],
             "keyword": "Then "
@@ -212,11 +247,11 @@
         ]
       }
     ],
-    "name": "User Should be able to send message",
-    "description": "  AC:\n  1- verify user can send message by clicking \"MESSAGE\" tab\n  2- verify user can cancel message\n  3- verify user can attach link by clicking on the link icon",
-    "id": "user-should-be-able-to-send-message",
+    "name": "Agile story: 3. As a user, I should be able to search people,",
+    "description": "  document and more from search box\n  2. Verify users get menu item and suggested modules when they type in the box.",
+    "id": "agile-story:-3.-as-a-user--i-should-be-able-to-search-people-",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/homeActivity.feature",
+    "uri": "file:src/test/resources/features/US03_AC2_SearchBox.feature",
     "tags": []
   }
 ]
