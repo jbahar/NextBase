@@ -26,6 +26,8 @@ public abstract class HomePage {
 
 
 
+
+
     @FindBy(xpath = "//input[@name = 'q']")
     public  WebElement searchBox;
 

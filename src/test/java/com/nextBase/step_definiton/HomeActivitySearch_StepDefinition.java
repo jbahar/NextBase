@@ -20,6 +20,9 @@ public class HomeActivitySearch_StepDefinition {
         page.searchBox.sendKeys(searchWord);
         BrowserUtils.sleep(2);
     }
+
+
+
     /*
     In next test we will check if any possible suggestion (ANY String from List<String> possible) will show up while we typing in the search box
     If Something will be shown - test passed, If not - failed after loop
