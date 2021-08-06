@@ -1,5 +1,5 @@
 
-Feature: login functionality
+Feature:  login functionality
   User Story: As a user, I should be able to login to the app
 
   - Verify users can login
