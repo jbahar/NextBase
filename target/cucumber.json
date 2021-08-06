@@ -1,60 +1,17 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 9,
-        "name": "Assuming user ia on login page",
+        "start_timestamp": "2021-08-06T02:07:39.259Z",
+        "line": 10,
+        "name": "Ability to access \"FORGOT YOUR PASSWORD?\" link page",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5023000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 7000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
-                }
-              }
-            ],
-            "line": 10,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.user_is_on_the_login_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-04T20:08:05.272Z",
-        "line": 20,
-        "name": "ability to click checkbox \"Remember me on this computer\"",
-        "description": "",
-        "id": "login-functionality;ability-to-click-checkbox-\"remember-me-on-this-computer\"",
+        "id": "login-functionality;ability-to-access-\"forgot-your-password?\"-link-page",
         "after": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "match": {
@@ -67,7 +24,40 @@
         "steps": [
           {
             "result": {
-              "duration": 162000000,
+              "duration": 5036000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "User on the login page",
+            "match": {
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.user_on_the_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283000000,
               "status": "passed"
             },
             "before": [
@@ -81,16 +71,10 @@
                 }
               }
             ],
-            "line": 21,
-            "name": "user click on the \"checkbox\"",
+            "line": 12,
+            "name": "User click on the FORGOT YOUR PASSWORD? link",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"checkbox\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.userClickOnThe(java.lang.String)"
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.user_click_on_the_forgot_your_password_link()"
             },
             "after": [
               {
@@ -106,7 +90,111 @@
           },
           {
             "result": {
-              "duration": 55000000,
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "User enters the username \"helpdesk39@cybertekschool.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"helpdesk39@cybertekschool.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.user_enters_the_username(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "User able to reset password button",
+            "match": {
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.user_able_to_reset_password_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2894000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "User click on the reset password button",
+            "match": {
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.user_click_on_the_reset_password_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.nextBase.step_definiton.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2073000000,
               "status": "passed"
             },
             "before": [
@@ -120,21 +208,14 @@
                 }
               }
             ],
-            "line": 22,
-            "name": "\"checkbox\" will be selected",
+            "line": 16,
+            "name": "Confirmation message about reset password should be displayed",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"checkbox\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.nextBase.step_definiton.Zalina_login_stepDefinition.willBeSelected(java.lang.String)"
+              "location": "com.nextBase.step_definiton.StepDefinition_Ainur.confirmation_message_about_reset_password_should_be_displayed()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -147,7 +228,7 @@
         ],
         "tags": [
           {
-            "name": "@Z"
+            "name": "@a"
           }
         ]
       }
@@ -156,7 +237,16 @@
     "description": "  User Story: As a user, I should be able to login to the app\n\n  - Verify users can login\n  -verify users can check \"\"Remember me on this computer\"\" option\n  -Verify users can access to \"\"FORGOT YOUR PASSWORD?\"\" link page",
     "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Z_login.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Ainur_login.feature",
+    "tags": [
+      {
+        "name": "@a",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
