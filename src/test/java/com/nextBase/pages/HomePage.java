@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public abstract class HomePage {
     public HomePage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -21,6 +23,16 @@ public abstract class HomePage {
 
     @FindBy(xpath = "//span[@title = 'Link']")
     public WebElement linkButton;
+
+
+
+
+
+    @FindBy(xpath = "//input[@name = 'q']")
+    public  WebElement searchBox;
+
+    @FindBy(xpath = "//div[@class='search-title-top-subtitle-text']")
+    public List<WebElement> searchSuggestedModules;
 
 
 }

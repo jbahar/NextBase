@@ -42,7 +42,7 @@ public class Hooks {
 
     @AfterStep
     public void afterStep(){
-        System.out.println("----teardown applying for each step");
+       // System.out.println("----teardown applying for each step");
     }
 
 }
