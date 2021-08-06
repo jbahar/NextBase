@@ -3,12 +3,10 @@ Feature: Agile story: 3. As a user, I should be able to search people,
   2. Verify users get menu item and suggested modules when they type in the box.
 
 
-
   Background:
     Given user is in the login page
     When user enter "username" and "password"
     And user click login
-
 
 
   Scenario: Verify users get menu item and suggested modules when they type in the box.
