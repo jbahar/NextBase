@@ -18,7 +18,7 @@ Feature: User Should be able to send message
       And user is in home page and click on message button
       Then user can cancel the message
 
-  @wip
+
   Scenario: verify user can attach link by clicking on the link icon
     And user is in home page and click on message button
     Then user can be clink on the link icon
