@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "com/nextBase/step_definiton",
         dryRun = false,
 
-        tags = "@a"
+        tags = "@M"
 
 )
 public class CukesRunner {
